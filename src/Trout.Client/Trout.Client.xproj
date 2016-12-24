@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+	  <!-- Makes the TypeScript compilation task a no-op -->
+	  <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+	</PropertyGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>848df8a2-8ae2-4ccd-9d0e-758646dfdef6</ProjectGuid>
     <RootNamespace>Trout.Client</RootNamespace>
