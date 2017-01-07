@@ -1,0 +1,3 @@
+[submodule "src/IrcDotNet"]
+	path = src/IrcDotNet
+	url = git@github.com:saravanaj/IrcDotNet.git
