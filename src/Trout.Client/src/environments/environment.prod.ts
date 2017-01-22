@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+    production: true,
+    signalrUri: "http://localhost:6001/signalr/"
 };

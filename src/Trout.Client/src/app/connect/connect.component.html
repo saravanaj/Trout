@@ -1,0 +1,71 @@
+<div id="connect" class="window">
+    <form class="container" method="post" action="">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="title">
+                    Connect
+                </h1>
+            </div>
+            <div>
+                <div class="col-sm-12">
+                    <h2>Network settings</h2>
+                </div>
+                <div class="col-sm-3">
+                    <label for="connect:name">Name</label>
+                </div>
+                <div class="col-sm-9">
+                    <input class="input" id="connect:name" name="name" value="">
+                </div>
+                <div class="col-sm-3">
+                    <label for="connect:host">Server</label>
+                </div>
+                <div class="col-sm-6 col-xs-8">
+                    <input class="input" id="connect:host" name="host" value="" aria-label="Server address" />
+                </div>
+                <div class="col-sm-3 col-xs-4">
+                    <div class="port">
+                        <input class="input" type="number" min="1" max="65535" name="port" value="" aria-label="Server port" />
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-3">
+                    <label for="connect:password">Password</label>
+                </div>
+                <div class="col-sm-9">
+                    <input class="input" id="connect:password" type="password" name="password" value="">
+                </div>
+                <div class="col-sm-9 col-sm-offset-3">
+                    <label class="tls">
+                        <input type="checkbox" name="tls" />
+                        Enable TLS/SSL
+                    </label>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-12">
+                <h2>User preferences</h2>
+            </div>
+            <div class="col-sm-3">
+                <label for="connect:nick">Nick</label>
+            </div>
+            <div class="col-sm-9">
+                <input class="input nick" id="connect:nick" name="nick" value="">
+            </div>
+            <div class="col-sm-3">
+                <label for="connect:realname">Real name</label>
+            </div>
+            <div class="col-sm-9">
+                <input class="input" id="connect:realname" name="realname" value="">
+            </div>
+            <div class="col-sm-3">
+                <label for="connect:channels">Channels</label>
+            </div>
+            <div class="col-sm-9">
+                <input class="input" id="connect:channels" name="join" value="">
+            </div>
+            <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="btn">Connect</button>
+            </div>
+        </div>
+    </form>
+</div>
