@@ -29,6 +29,8 @@ namespace Trout.Server
         {
             // Add framework services.
             services.AddMvc();
+            services.AddSignalR();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,8 +38,9 @@ namespace Trout.Server
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
+            app.UseCors(b => b.AllowAnyOrigin().AllowCredentials());
             app.UseMvc();
+            app.UseSignalR();
         }
     }
 }

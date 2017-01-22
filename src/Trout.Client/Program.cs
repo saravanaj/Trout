@@ -16,6 +16,7 @@ namespace Trout.Client
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://*:6000")
                 .Build();
 
             host.Run();
