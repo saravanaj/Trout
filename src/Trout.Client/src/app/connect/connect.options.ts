@@ -1,6 +1,7 @@
-export class ConnectModel {
+export class ConnectOptions {
     public name: string;
-    public address: string;
+    public host: string;
+    public port: number;
     public password?: string;
     public enableSsl: boolean;
     public nick: string;

@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ConnectModel } from './connect.model';
+import { ConnectOptions } from './connect.options';
+import { environment } from '../../environments/environment';
+import "jquery";
+import "signalr";
+
+declare let $: JQueryStatic;
 
 @Component({
     selector: 'app-connect',
@@ -9,19 +14,29 @@ import { ConnectModel } from './connect.model';
 export class ConnectComponent implements OnInit {
 
     // Setup default values
-    private connectModel: ConnectModel = {
-        address: "irc.freenode.net:6667",
-        channels: "#trout",
-        enableSsl: true,
+    private connectOptions: ConnectOptions = {
+        host: "chat.freenode.net",
+        port: 6667,
+        channels: "#git",
+        enableSsl: false,
         name: "trout-user",
         nick: "trout-user",
         realName: "trout-user"
     };
-
+    
     ngOnInit() {
     }
 
     connect(event: Event) {
         debugger
+
+        let ircHub = $.hubConnection(environment.signalrUri);
+        let ircHubProxy = ircHub.createHubProxy('ircHub');
+        ircHubProxy.on('conected', (name: string) => {
+            console.log(name);
+        });
+        ircHub.start().then(() => {
+            ircHubProxy.invoke('connect', this.connectOptions);
+        });
     }
 }

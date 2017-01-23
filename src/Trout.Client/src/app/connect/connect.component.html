@@ -1,57 +1,70 @@
 <div class="connect">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 class="title">
-        Connect
-      </h1>
-    </div>
-  </div>
-  <form>
     <div class="row">
-      <div class="col-sm-12">
-        <h3>Network settings</h3>
-      </div>
+        <div class="col-sm-12">
+            <h1 class="title">
+                Connect
+            </h1>
+        </div>
     </div>
-    <div class="form-group">
-      <label for="connect:name" class="control-label">Name</label>
-      <input class="form-control" id="connect:name" name="name" placeholder="Network name" [(ngModel)]="connectModel.name" />
-    </div>
-    <div class="form-group">
-      <label for="connect:address" class="control-label">Server address</label>
-      <input class="form-control" id="connect:address" name="address" placeholder="Server address (with port)" [(ngModel)]="connectModel.address"
-      />
-    </div>
-    <div class="form-group">
-      <label for="connect:password" class="control-label">Password</label>
-      <input class="form-control" id="connect:password" name="password" type="password" placeholder="Password" [(ngModel)]="connectModel.password"
-      />
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" id="connect:enableSsl" name="enableSsl" [(ngModel)]="connectModel.enableSsl" />Enable TLS/SSL
-      </label>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h3>User preferences</h3>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="connect:nick" class="control-label">Nick</label>
-      <input class="form-control" id="connect:nick" name="nick" placeholder="Nick" [(ngModel)]="connectModel.nick" />
-    </div>
-    <div class="form-group">
-      <label for="connect:realName" class="control-label">Real name</label>
-      <input class="form-control" id="connect:realName" name="realName" placeholder="Real name" [(ngModel)]="connectModel.realName"
-      />
-    </div>
-    <div class="form-group">
-      <label for="connect:channels" class="control-label">Channels</label>
-      <input class="form-control" id="connect:channels" name="channels" placeholder="Channels to join" [(ngModel)]="connectModel.channels"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary" (click)="connect($event)">Connect</button>
-    <button type="reset" class="btn btn-default">Reset</button>
-  </form>
-  <hr />
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Network settings</h3>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="connect:name" class="control-label">Name</label>
+                    <input class="form-control" id="connect:name" name="name" placeholder="Network name" [(ngModel)]="connectOptions.name" />
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-8">
+                        <label for="connect:host" class="control-label">Server address</label>
+                        <input class="form-control" id="connect:host" name="host" placeholder="Server host (ex: chat.freenode.net)" [(ngModel)]="connectOptions.host" />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="connect:host" class="control-label">Port</label>
+                        <input class="form-control" id="connect:port" name="port" type="number" placeholder="Port (ex: 6665)" [(ngModel)]="connectOptions.port" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="connect:password" class="control-label">Password</label>
+                    <input class="form-control" id="connect:password" name="password" type="password" placeholder="Password" [(ngModel)]="connectOptions.password" />
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="connect:enableSsl" name="enableSsl" [(ngModel)]="connectOptions.enableSsl" />Enable TLS/SSL
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>User preferences</h3>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="connect:nick" class="control-label">Nick</label>
+                    <input class="form-control" id="connect:nick" name="nick" placeholder="Nick" [(ngModel)]="connectOptions.nick" />
+                </div>
+                <div class="form-group">
+                    <label for="connect:realName" class="control-label">Real name</label>
+                    <input class="form-control" id="connect:realName" name="realName" placeholder="Real name" [(ngModel)]="connectOptions.realName" />
+                </div>
+                <div class="form-group">
+                    <label for="connect:channels" class="control-label">Channels</label>
+                    <input class="form-control" id="connect:channels" name="channels" placeholder="Channels to join" [(ngModel)]="connectOptions.channels" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary" (click)="connect($event)">Connect</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+            </div>
+        </div>
+    </form>
+    <hr />
 </div>
