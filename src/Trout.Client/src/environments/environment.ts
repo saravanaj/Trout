@@ -5,5 +5,5 @@
 
 export const environment = {
     production: false,
-    signalrUri: "http://localhost:6001/signalr/"
+    signalrUri: "http://localhost:7000/signalr/"
 };

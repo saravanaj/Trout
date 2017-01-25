@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConnectOptions } from './connect.options';
+import { ConnectOptions } from './connect-options';
 import { environment } from '../../environments/environment';
 import "jquery";
 import "signalr";
