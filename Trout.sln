@@ -1,21 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6CCAB6DC-BE4E-4CF7-BBC9-863E25CB043D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEF840D6-62D4-4695-98E1-C39C4CFDD9A5}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Trout.Server", "src\Trout.Server\Trout.Server.xproj", "{DC132448-2ABA-40FA-9098-2C260D094366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trout.Server", "src\Trout.Server\Trout.Server.csproj", "{DC132448-2ABA-40FA-9098-2C260D094366}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Trout.Client", "src\Trout.Client\Trout.Client.xproj", "{848DF8A2-8AE2-4CCD-9D0E-758646DFDEF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trout.Client", "src\Trout.Client\Trout.Client.csproj", "{848DF8A2-8AE2-4CCD-9D0E-758646DFDEF6}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "IrcDotNet", "src\IrcDotNet\source\IrcDotNet\IrcDotNet.xproj", "{16C78B4C-E12E-4DC1-80BD-DB5AE257A1C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IrcDotNet", "src\IrcDotNet\source\IrcDotNet\IrcDotNet.csproj", "{16C78B4C-E12E-4DC1-80BD-DB5AE257A1C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

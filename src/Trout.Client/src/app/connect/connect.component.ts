@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { ConnectOptions } from './connect-options';
 import { environment } from '../../environments/environment';
 import "jquery";
@@ -28,7 +28,6 @@ export class ConnectComponent implements OnInit {
     }
 
     connect(event: Event) {
-        debugger
 
         let ircHub = $.hubConnection(environment.signalrUri);
         let ircHubProxy = ircHub.createHubProxy('ircHub');
