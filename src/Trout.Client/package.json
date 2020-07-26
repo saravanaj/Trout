@@ -24,7 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.18",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "rxjs": "^5.0.1",
     "signalr": "^2.2.1",
     "ts-helpers": "^1.1.1",
