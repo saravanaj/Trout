@@ -5745,8 +5745,8 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.1.tgz#76899499c184b6ef754377c2dbb0cd6cb55d29e7"
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
 
 when@~3.6.x:
   version "3.6.4"
@@ -5918,3 +5918,7 @@ yeast@0.1.2:
 zone.js@^0.7.2:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.7.5.tgz#bca7cce46ba3216e8631cff36591c4e62cb27104"
+
+zone.js@^0.7.4:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.7.8.tgz#4f3fe8834d44597f2639053a0fa438df34fffded"
